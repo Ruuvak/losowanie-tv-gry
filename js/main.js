@@ -4,7 +4,7 @@
 
 var w1 = [];
 var w2 = [];
-var ryjce = ["szef", "kacper", "hed", "arasz", "jordan", "fanggotten", "michal", "panmateusz"];
+var ryjce = ["mareg", "damian"];
 $.ajaxSetup({
     async: false
 });
@@ -136,7 +136,7 @@ function losowanko() {
         b3.innerHTML = w2[Math.floor(getRandomArbitrary(0, w2.length))];
 		p3.style.width = ((time-100)/20)*100 + "%";
 	}
-    ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/" + ryjce[Math.floor(getRandomArbitrary(0, ryjce.length))] + ".png'/>";
+    ryjceDiv.innerHTML = "sprucie dla: <img height='100px' class='shadowed' src='img/" + ryjce[Math.floor(getRandomArbitrary(0, ryjce.length))] + ".png'/>";
     time += 1;
     if (time == 80)
 	{
@@ -179,14 +179,14 @@ function losowanko() {
             specjalne += 1;
         }
         else if (b2.innerHTML == w1[36]) {
-            ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/szef.png' />";
+            ryjceDiv.innerHTML = "sprucie dla: <img height='100px' class='shadowed' src='img/szef.png' />";
             a4.src = "sounds/tonasiebie.mp3"
             a4.play();
             progress.innerHTML = "specjal napędził: Klo Cuch <br />oryginał: <a href='https://www.youtube.com/watch?v=H6qsJcALHkM'>Link do YT</a><br />losowanko zakonczone, jeszcze raz?";
             specjalne += 1;
         }
         else if (b2.innerHTML == w1[1]) {
-            ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/jordan.png' />";
+            ryjceDiv.innerHTML = "sprucie dla: <img height='100px' class='shadowed' src='img/jordan.png' />";
             a4.src = "sounds/chinskie.mp3"
             a4.play();
             progress.innerHTML = "specjal napędził: Klo Cuch <br />oryginał: <a href='https://www.youtube.com/watch?v=H6qsJcALHkM'>Link do YT</a><br />losowanko zakonczone, jeszcze raz?";
@@ -206,7 +206,7 @@ function losowanko() {
             specjalne += 1;
         }
         else if (b2.innerHTML == w1[42] && b3.innerHTML == w2[100]) {
-            ryjceDiv.innerHTML = "temacik dla: <img height='100px' class='shadowed' src='img/kacper.png />";
+            ryjceDiv.innerHTML = "sprucie dla: <img height='100px' class='shadowed' src='img/kacper.png />";
             a4.src = "sounds/kruci.mp3"
             a4.play();
             progress.innerHTML = "specjal napędził: Klo Cuch <br />oryginał: <a href='https://www.youtube.com/watch?v=sS3xkUyqyUQ'>Link do YT</a><br />losowanko zakonczone, jeszcze raz?";
